@@ -1,0 +1,67 @@
+POST http://127.0.0.1:5000/tasks
+Content-Type: application/json
+Authorization: asdasd
+
+{
+  "category_id": 1,
+  "title": "test 1",
+  "done": 0,
+  "due": "2024-05-31"
+}
+
+###
+GET http://127.0.0.1:5000/tasks
+Content-Type: application/json
+Authorization: asdasd
+
+
+###
+
+PUT http://127.0.0.1:5000/tasks/update-task3
+Content-Type: application/json
+Authorization: asdasd
+
+{
+  "title": "SSSSSSSSanDwitCHessss",
+  "done": 0,
+  "due": "2024-05-24"
+}
+
+###
+
+PUT http://127.0.0.1:5000/tasks/update-task3
+Content-Type: application/json
+Authorization: asdasd
+
+{
+  "category_id": "2"
+}
+
+###
+
+PUT http://127.0.0.1:5000/tasks/update-task4
+Content-Type: application/json
+Authorization: asdasd
+
+{
+  "title": "New task or whatever",
+  "done": 0,
+  "due": "2024-06-12"
+
+}
+
+###
+
+POST http://127.0.0.1:5000/tasks/categories
+Content-Type: application/json
+Authorization: asdasd
+
+{
+  "category_name": "project"
+}
+
+###
+
+DELETE http://127.0.0.1:5000/tasks/remove-task5
+Content-Type: application/json
+Authorization: asdasd
